@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>채용컨텐츠</title>
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <style>
+    *{  margin: 0;
+        padding: 0; 
+        box-sizing: border-box;
+        font-size: 14px;
+        font-family: 'GangwonEduPowerExtraBoldA';}
+    li { list-style: none;}
+    img{ width: 100%; }   
+    
+    #wrap 
+    {   /* width: 1920px; */
+        width: 100%;
+        margin: 0 auto;
+        position: relative;} 
+    .contanier { width: 1200px; margin: 0 auto; }
+    .header 
+    { width: 1920px;
+      height: 100px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 100;
+      background-color: rgba(255, 255, 255, 0.623);}
+
+    .header>.logo 
+    {   width: 200px;
+        float: left;
+        display: flex;
+        align-items: center;
+        justify-content: center;}
+
+    .header>.nav 
+    {    width: 600px;
+        height: 50px;
+        float: right;
+        margin-top: 25px;
+        font-family: 'GangwonEduPowerExtraBoldA';}
+
+    .header>.nav>ul {}
+
+    .header>.nav>ul>li {
+        width: 150px;
+        height: 50px;
+        float: left;
+        position: relative;
+    }
+
+    .header>.nav>ul>li>a {
+        display: block;
+        text-align: center;
+        line-height: 50px;
+        font-size: 20px;
+    }
+
+    .header>.nav>ul>li:hover>a {
+        transition: all 0.3s;
+        color: black;
+    }
+
+    .header .nav>ul>li>ul.sub {
+        position: absolute;
+        top: 50px;
+        left: 0;
+        z-index: 10;
+        display: none;
+    }
+
+    .header .nav>ul>li>ul.sub>li {
+        float: left;
+    }
+
+    .header .nav>ul>li>ul.sub>li>a {
+        width: 150px;
+        display: block;
+        text-align: center;
+        line-height: 50px;
+        font-size: 17px;
+        transition: all 0.3s;
+        background-color: rgba(255, 255, 255, 0.712);
+    }
+
+    .header .nav>ul>li>ul.sub>li>a:hover
+    {font-size: 20.5px; color: #bac3fd;}
+    /* -------------------header--------------------- */
+
+    .banner {height: 1920px;height: 600px;}
+    #contents img{
+        margin-top: 100px;
+    }
+
+    .footer { width: 1200px; height: 200px;}
+    .footer>article 
+    {   width: 980px;
+        height: 100px;
+        float: left;
+        padding-left: 10px;
+        padding-top: 5px;}
+    .footer>.f_sns 
+    {  width: 220px;
+       height: 200px;
+       float: left;
+       display: flex;
+       align-items: center;
+       justify-content: center;}
+    .footer>.f_menu 
+    {   display: flex;
+        align-items: center;
+        justify-content: center;}
+    .footer>.f_menu>ul {text-align: center;}
+    .footer>.f_menu>ul>li 
+    {   border-right: 1px solid #7d8693;
+        margin-right: 20px;
+        padding-right: 20px;
+        display: inline; }
+    .footer>.f_menu>ul>li:last-child {border-right: 0;}
+    .footer>.f_menu>ul>li>a {}
+    .footer>.f_copy 
+    {   line-height: 100px;
+        text-align: center;}
+     
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="contanier">
+                <header class="header" class="clearfix">
+                    <h1 class="logo">
+                        <a href="#"><img src="./CAFE POTO/CAFE LOGO.png" alt="로고이미지"></a>
+                    </h1>
+                    <nav class="nav">
+                        <ul class="clearfix">
+                            <li>
+                                <a href="#">위시소개</a>
+                                <ul class="sub">
+                                    <li><a href="#">브랜드</a></li>
+                                    <li><a href="#">BI</a></li>
+                                    <li><a href="#">채용</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">메뉴소개</a>
+                                <ul class="sub">
+                                    <li><a href="#">음료</a></li>
+                                    <li><a href="#">푸드</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">매장안내</a>
+                                <ul class="sub">
+                                    <li><a href="#">오시는 길</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">소통공간</a>
+                                <ul class="sub">
+                                    <li><a href="#">공지사항</a></li>
+                                    <li><a href="#">이벤트</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </header>
+            </div>
+        </header>    
+        </div>
+        <section id="contents">
+            <div class="contanier">
+                <img src="./CAFE POTO/Recruitment.png" alt="">
+            </div>    
+        </section>
+        <footer id="footer">
+            <div class="contanier">
+                <div class="footer">
+                    <article class="f_sns">
+                        <a href="#"><img src="./CAFE POTO/f_insta.png" alt="인스타로고"></a>
+                        <a href="#"><img src="./CAFE POTO/f_youtube.png" alt="유튜브로고"></a>
+                    </article>
+                    <article class="f_menu">
+                        <ul class="clearfix">
+                            <li><a href="#">[본사] 서울특별시 화곡로 149, (주)MBC아카데미 (00714)</a></li><br>
+                            <li><a href="#">대표이사 : 정여진</a></li>
+                            <li><a href="#">대표번호 : +82 &#41; 8621-0515</a></li>
+                            <li><a href="#">대표메일 : index.wish.html</a></li>
+                        </ul>
+                    </article>
+                    <article class="f_copy">
+                        Copyright &copy; 2024 WISH.All Rights Reserved.
+                    </article>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+
+        //윈도우 팝업창
+        $(".window").click(function(e){
+            e.preventDefault();
+            //기본으로 가지고 있는 명령어를 정지시키는 메서드
+            window.open("Jobs.html","pup01","width=800,height=600,left=50,top=50")
+            //window.open : 윈도우창에 파일을 열어주는 이벤트
+            //pup.html : 윈도우 창에 불러오는 파일
+            //pup01 : 윈도웅 팝업창 이름
+            //window.open("width=800,height=600,left=50,top=50"):윈도우창에 대한 옵션
+        });
+
+        //네비
+        $(".nav>ul>li").mouseover(function(){
+                {$(this).find(".sub").stop().slideDown();}
+        });
+        $(".nav>ul>li").mouseout(function(){
+            {$(this).find(".sub").stop().slideUp();}
+        });
+    </script>
+</body>
+</html>
